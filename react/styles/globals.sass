@@ -1,0 +1,24 @@
+%main
+  padding: 0
+  font-family: Menlo
+
+html
+  @extend %main
+
+body
+  @extend %main
+  margin: 8px
+
+a
+  color: inherit
+  text-decoration: none
+
+*
+  box-sizing: border-box
+
+@media (prefers-color-scheme: dark)
+  html
+    color-scheme: dark
+  body
+    color: #502c2c
+    background: #fdeeef
