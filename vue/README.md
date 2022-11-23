@@ -1,4 +1,4 @@
-# kuro
+# vue
 
 ## Project setup
 ```
