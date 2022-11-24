@@ -1,6 +1,6 @@
 # ***Python Library***
 
-## ***■ Pythonで " @ ", " ^ ", " : " を使える用にする***
+## ***■ PythonAutoGUIで " @ ", " ^ ", " : " を使える用にする***
 **> 修正ファイル : `C:\Python310\Lib\site-packages\pyautogui\_pyautogui_win.py`**
 <br>
 
