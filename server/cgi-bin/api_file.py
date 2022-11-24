@@ -14,7 +14,7 @@ class ApiFile:
     res_json = ''
 
     # ファイル保管場所
-    server_resource = './server_resource/'
+    server_resource = './server-resource/'
 
 # methods
     def __init__(self):
