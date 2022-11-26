@@ -24,7 +24,7 @@ h1
 2. **`mixin 関数みたいなやつ`**  
 &emsp; ※@mixinはSASSでは=で省略可能
 ```scss
-@mixin func($color: #fff, $f-size: 1em)
+@mixin func($color: #fff, $f-size: normal)
   color: $color
   font-size: $f-size
 .cont-btn
