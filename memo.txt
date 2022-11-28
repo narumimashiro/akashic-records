@@ -1,5 +1,0 @@
-SCSS/SASSについて
-https://www.fenet.jp/dotnet/column/language/html-css/5245/
-
-Imageタグについて
-https://zenn.dev/nbr41to/articles/365e8105efa448
