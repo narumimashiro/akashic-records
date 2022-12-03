@@ -2,19 +2,19 @@
 
 ## **ディレクトリ構成**
 ```
-src----lib
-    |   |--post.ts // ファイルをやり取りをする
+src―――lib
+    |  |―post.ts // ファイルをやり取りをする
     |
-    |--pages
-        |--main
-        |   |--blog.tsx // ブログの一覧が表示されているページ
-        |
-        |--posts
-            |--[id].tsx // 任意のページに対して行う
+    |―pages
+       |―main
+       |  |―blog.tsx // ブログの一覧が表示されているページ
+       |
+       |―posts
+          |―[id].tsx // 任意のページに対して行う
 ```
 
 ## **post.ts** 
----
+
 ファイルを読み込んだりとデータを扱う役割
 
 ```typescript
@@ -93,7 +93,7 @@ const getPostsData = async (id: string) => {
 export { getPostsDataList, getAllPostId, getPostsData }
 ```
 ## **blog.tsx**
----
+
 サムネなど表示して、クリックすると各ブログ記事へ飛ぶリンクなどが書いてある。  
 ここにもSSGの実装がある
 ```typescript
