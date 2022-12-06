@@ -1,9 +1,44 @@
-<mxfile host="app.diagrams.net" modified="2022-12-06T13:41:39.822Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="XChYeKSdxXZj1o3bJrYV" version="20.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-06T14:09:20.826Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="mJe6fbQmGvwaSPfzgU0e" version="20.6.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="981" dy="574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="dxnm75F6Re3fI4lR15Vy-5" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://shimablogs.com/wp-content/uploads/2020/04/vuex.png;" vertex="1" parent="1">
+          <mxGeometry x="30" y="320" width="228.85" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="dxnm75F6Re3fI4lR15Vy-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dxnm75F6Re3fI4lR15Vy-6" target="dxnm75F6Re3fI4lR15Vy-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dxnm75F6Re3fI4lR15Vy-6" value="ViewComponent1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="560" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxnm75F6Re3fI4lR15Vy-7" value="Actions" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="280" y="720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxnm75F6Re3fI4lR15Vy-8" value="State" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="440" y="560" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxnm75F6Re3fI4lR15Vy-9" value="Mutations" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="600" y="720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxnm75F6Re3fI4lR15Vy-10" value="Getters" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="440" y="360" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxnm75F6Re3fI4lR15Vy-12" value="List" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="790" width="140" height="104" as="geometry">
+            <mxRectangle x="40" y="790" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dxnm75F6Re3fI4lR15Vy-13" value="Item 1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="dxnm75F6Re3fI4lR15Vy-12">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="dxnm75F6Re3fI4lR15Vy-14" value="Item 2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="dxnm75F6Re3fI4lR15Vy-12">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="dxnm75F6Re3fI4lR15Vy-15" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="dxnm75F6Re3fI4lR15Vy-12">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
