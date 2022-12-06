@@ -2,7 +2,7 @@
 
 ## **ディレクトリ構成**
 state, actions, getters, mutationsをモジュール化したVuexをTypeScript化  
-※ **`node_module/vuex/vuex/types/index.d.ts`** に型定義が書いてある
+※ **`node_module/vuex/types/index.d.ts`** に型定義が書いてある
 ```
 src―――store
        |―store.ts
@@ -156,5 +156,12 @@ export interface MutationTree<S> {
   [key: string]: Mutation<S>;
 }
 ```
+
+### Componentでの使い方
+'モジュール名/getter関数' を指定して呼び出す
+```ts
+this.$store.getters['Redux/getLoading']
+```
+
 > 参考ページ : <https://codeburst.io/vuex-and-typescript-3427ba78cfa8>  
 > 参考ページ : <https://qiita.com/yam0918/items/68d4d6c74b06d589a195>
