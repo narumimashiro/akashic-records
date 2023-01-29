@@ -1,0 +1,46 @@
+<mxfile host="65bd71144e">
+    <diagram id="mZ_49YuVT78pgYv1LNfM" name="Page-1">
+        <mxGraphModel dx="866" dy="830" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="96" background="#ffffff" math="0" shadow="1">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="5" value="コミケ運営" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;sketch=1;curveFitting=1;jiggle=2;strokeColor=#000000;fontColor=#1A1A1A;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="160" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="選考管理システム" style="html=1;align=center;verticalAlign=top;sketch=1;curveFitting=1;jiggle=2;fillColor=#FFFFFF;fontColor=#1A1A1A;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="80" width="200" height="281" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="html=1;dashed=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#FFFFFF;fontColor=#1A1A1A;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="119" width="160" height="141" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;sketch=1;curveFitting=1;jiggle=2;fontColor=#1A1A1A;" edge="1" parent="1" source="7" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="サークル情報を&lt;br&gt;登録する" style="html=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#FFFFFF;fontColor=#1A1A1A;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="140" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="選考状況、結果日時&lt;br&gt;を設定する" style="html=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#FFFFFF;fontColor=#1A1A1A;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="200" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="サークル宛てに&lt;br&gt;メールする" style="html=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#FFFFFF;fontColor=#1A1A1A;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="288" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;sketch=1;curveFitting=1;jiggle=2;fontColor=#1A1A1A;" edge="1" parent="1" source="8" target="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="250" y="170" as="sourcePoint"/>
+                        <mxPoint x="120" y="196.8965517241379" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;sketch=1;curveFitting=1;jiggle=2;fontColor=#1A1A1A;" edge="1" parent="1" source="10" target="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="250" y="230" as="sourcePoint"/>
+                        <mxPoint x="120" y="203.1034482758621" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="※本来のシステムとまったく異なります" style="text;html=1;strokeColor=#000000;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;shadow=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                    <mxGeometry x="45" y="372" width="230" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

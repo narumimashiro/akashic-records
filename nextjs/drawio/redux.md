@@ -1,19 +1,50 @@
-# ***Redux Library***
+# **Redux Library**
+
+## **Reduxとは**
+
+ReduxとはUIの状態(state)を管理するための状態管理ライブラリ。  
+FaceBook社が提唱しているFluxというデータフロー管理のためのアーキテクチャパターンを採用しています。
+
+Webアプリは、アプリケーション全体にまたがってデータやオブジェクトを保存したり、共有したりする必要があります。  
+状態管理ライブラリがない場合、親コンポーネントから子コンポーネントにPropsの形で受け渡すが、規模が大きくなったり、階層の違うコンポーネントに対して渡すときには慎重に行わないと行けず、不具合の原因になりうる。
+
+そんな不安定で管理が複雑な状態を改善することができるのが、Reduxとなります。  
+Reduxにはこれから紹介する、「3つのコンセプト」と「4つの要素」によって実現しています。
+
+## **3つのコンセプト**
+
+1. 信頼できる唯一の情報源であること。
+
+Reduxではアプリケーションの状態をStateと呼ばれるオブジェクトツリーで管理しており、Storeがそれを保持しています。  
+後ほど具体例を記述するが、Stateはオブジェクトを宣言するのと同じように宣言的で可視化されているので、どのようなデータを管理しているのかが簡単に把握できます。
+
+2. Read Only読み取り専用であること。
+
+Stateに直接アクセスをして値を書き換えることは基本的には許可されていなく、値を書き換えるためにはActionと呼ばれるオブジェクトを発行しなくてはいけません。そのような一元化した仕組みにすることで意図しないタイミングでの値の書き換わりなどを防ぎ、不具合が起きる可能性を低めています。
+
+3. 状態の管理は純粋関数で行われること。
+
+Reducerという純粋関数でStateの変更を行っています。  
+先ほどちらっと出てきたActionというオブジェクトとStoreで保持されているStateを用いて、新しいStateを生成します。
+
+
+# **Modalウィンドウ用Redux**
+
+警告ウィンドウなどユーザーに操作を促すために使われるModalウィンドウですが、今回はこのModalウィンドウの実装をコンポーネントで用意し、それを必要なページにimportし、データをPropsの形で渡して実現するのではなく、状態管理ライブラリ**Redux**を用いて実現してみます。
+Reduxを使うことのメリットとしては、いちいちimportする必要がなくなるくらいかもしれませんが、(あとは初期設計ではいらないと思ったが、後付けで必要になったときにPropsを渡すような親子関係ではなく、完全に分離されているので気軽に導入しやすいとか？)Reduxで調べると出てくる解説の多くはTODOリスト作ってみようだと思うので、こういったこともできるのか、ふむふむと思っていただけたら幸いです。
 
 ## **ディレクトリ構成**
+
+```Text
+src―redux
+     |―store.ts
+     |―modal
+        |―modal.reducer.ts
+        |―modal.types.ts
+```
+
 Component思考が強いから(?)Vuexとは違って、特定のComponent用にReduxを用意する  
 この記事はモーダルウィンドウ用に作ったReduxをもとに記述している
-```Text
-src―――redux
-       |―store.ts
-       |―modal
-       |  |―modal.reducer.ts
-       |  |―modal.types.ts
-       |
-       |―other
-          |―other.reducer.ts
-          |―other.types.ts
-```
 
 ## **store.ts**
 ```ts
@@ -22,7 +53,7 @@ import modalReducer from './modal/modal.reducer'
 
 export const store = configureStore({
   reducer: {
-    modal: modalReducer
+    modal: modalReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
@@ -116,7 +147,7 @@ export interface ModalState {
 }
 ```
 
-# ***How to use redux***
+# **How to use redux**
 以下、タイトルとサイズを状態管理して可変にしているモーダルウィンドウ  
 useSelectorでStateの値を取得、Vuexのgettersみたいなもの  
 useDispatchでStateの値を変更する、VuexのActions,Mutationsみたいなもの

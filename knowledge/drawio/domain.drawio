@@ -1,0 +1,53 @@
+<mxfile host="65bd71144e">
+    <diagram id="gHDD3iUeaALw68R089a3" name="Page-1">
+        <mxGraphModel dx="615" dy="830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="96" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="コミケ&lt;br&gt;participation&lt;br&gt;開催日&lt;br&gt;募集状況&lt;br&gt;サークル数" style="html=1;strokeColor=#000000;fontColor=#000000;fillColor=none;gradientColor=none;shadow=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="119" width="120" height="81" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="html=1;strokeColor=#000000;fontColor=#000000;fillColor=none;gradientColor=none;shadow=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="80" width="370" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#000000;fontColor=#000000;shadow=1;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" target="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="230" y="130" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#000000;fontColor=#000000;shadow=1;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="420" y="130" as="sourcePoint"/>
+                        <mxPoint x="360" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;strokeColor=#000000;fontColor=#000000;shadow=1;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="442.5" y="200" as="sourcePoint"/>
+                        <mxPoint x="360" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#000000;fontColor=#000000;shadow=1;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="295" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="(出品物)&lt;br&gt;creation&lt;br&gt;ジャンル&lt;br&gt;価格" style="html=1;strokeColor=#000000;fontColor=#000000;fillColor=none;gradientColor=none;shadow=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="210" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="※本来のシステムとまったく異なります" style="text;html=1;strokeColor=#000000;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;shadow=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="306" width="230" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="(採用選考)&lt;br&gt;selection&lt;br&gt;選考状況&lt;br&gt;応募日" style="html=1;strokeColor=#000000;fontColor=#000000;fillColor=none;gradientColor=none;shadow=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="100" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="(応募者)&lt;br&gt;applicant&lt;br&gt;氏名&lt;br&gt;メアド" style="html=1;strokeColor=#000000;fontColor=#000000;fillColor=none;gradientColor=none;shadow=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                    <mxGeometry x="420" y="100" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="(面接)&lt;br&gt;interview&lt;br&gt;日時&lt;br&gt;場所" style="html=1;strokeColor=#000000;fontColor=#000000;fillColor=none;gradientColor=none;shadow=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                    <mxGeometry x="420" y="200" width="130" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

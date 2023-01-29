@@ -2,13 +2,13 @@
 
 ## **非同期処理の歴史**
 
-- 初期非同期処理
-- Promiseの誕生
-- async/await
+1. 初期非同期処理
+2. Promiseの誕生
+3. async/await
 
 ## **初期非同期処理**
 
-非同期処理と言ったら’Promise’や’aync/await’を思い浮かべるが、それらは「ES2015(ES6)」で追加された機能であり、2015年以前は非同期処理はコールバック関数で実現していた。
+非同期処理と言ったら’Promise’や’aync/await’を思い浮かべるが、それらは「ES2015(ES6)」で追加された機能であり、2015年以前は非同期処理はコールバック関数で実現していました。
 
 例) setTimeout()
 ```ts
@@ -20,7 +20,7 @@ Second
 First
 ```
 
-しかしバックグラウンド処理が増えるとソースコードの記述がとても複雑になっていき、「**コールバック地獄**」と呼ばれることとなった。
+しかしバックグラウンド処理が増えるとソースコードの記述がとても複雑になっていき、「**コールバック地獄**」と呼ばれることとなりました。
 
 例)コールバック地獄
 ```ts
@@ -57,7 +57,7 @@ Api1((result1) => {
 ## **Promiseの誕生**
 
 「ES2015(ES6)」で追加された非同期処理を扱うオブジェクト。  
-Promiseオブジェクトを返し、resolveやrejectを実行する。
+Promiseオブジェクトを返し、resolveやrejectを実行します。
 
 例) Promise
 ```ts
@@ -70,12 +70,11 @@ new Promise((resolve, reject) => {
 })
 ```
 
-resolveやrejectすると次の処理に行ける。
-次の処理に行くには「.then」で処理を書いていく。
+resolveやrejectすると次の処理に行けます。
+次の処理に行くには「.then」で処理を書いていきます。
 
-これによりネストして読みづらくなっていたコールバック地獄を抜け出すことになった。
-
-コールバック地獄のときに例にあげた処理をPromiseを使ってリメイクしてみる。
+これによりネストして読みづらくなっていたコールバック地獄を抜け出すことになりました。  
+コールバック地獄のときに例にあげた処理をPromiseを使ってリメイクしてみます。
 
 ```ts
 const ApiPromise1 = (): Promise<number> => {
@@ -116,12 +115,11 @@ ApiPromise1()
 
 ## **async/await**
 
-Promiseを使った書き方よりももっと簡単に記述することを可能にしたのが、async/awaitである。
+Promiseを使った書き方よりももっと簡単に記述することを可能にしたのが、async/awaitです。
 
 ### **asyncとは**
 
-非同期関数を定義する関数宣言のこと。
-書き方は以下の通り
+非同期関数を定義する関数宣言のことで、書き方は以下の通りです。
 ```ts
 async function asyncFunc() {} // function式
 const asycnFunc = async() => {} // アロー関数
@@ -133,11 +131,11 @@ async functionにすることでどう変わるのか...
 
 ### **awaitとは**
 
-awaitとは、指定した関数のPromise結果が返されるまでasync functionの処理を一時停止する。
+awaitとは、指定した関数のPromise結果が返されるまでasync functionの処理を一時停止するものです。
 
-役割の通り、asyncを一時停止するので、awaitはasyncとセットでないと利用できない。
+役割の通り、asyncを一時停止するので、awaitはasyncとセットでないと利用できません。
 
-asyncとawaitのことがわかったところで、Promiseを使った具体例をasync/awaitを使った処理にリメイクする。
+asyncとawaitのことがわかったところで、Promiseを使った具体例をasync/awaitを使った処理にリメイクしてみます。
 
 ```ts
 const main = async () => {
