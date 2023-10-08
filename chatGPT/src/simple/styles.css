@@ -1,0 +1,68 @@
+/* Apply a soft blue background color to the body */
+body {
+  background-color: #e0f2f9;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header with a gradient background */
+header {
+  background: linear-gradient(135deg, #0073b1, #0099cc);
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+}
+
+/* Style navigation links with a subtle hover effect */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #0073b1;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0099cc;
+}
+
+/* Style main content sections with a slight shadow */
+.styled-section {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  margin: 2rem 0;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style code blocks with a light gray background */
+pre {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow: auto;
+  color: #333;
+}
+
+/* Style the footer with a gradient background */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: linear-gradient(135deg, #0073b1, #0099cc);
+  color: white;
+}
+
+/* Add more styles as needed */

@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.column-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 90%;
+    min-height: 350px;
+    margin-bottom: 20px; /* 適切なマージンを設定 */
+}
+
+.column {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 33%; /* カラムの幅を調整 */
+    background-color: #f5f5f5;
+}
+
+.task {
+  border: 1px solid #ddd; /* 枠線を追加 */
+  padding: 10px; /* タスクの内部余白を設定 */
+  margin: 5px 0; /* タスクの上下のマージンを設定 */
+  background-color: white;
+  border-radius: 5px;
+}
+
+.task-list {
+    min-height: 100px;
+    border: 1px dashed #999;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* + ボタンのスタイル */
+#add-new-task {
+  display: block;
+  margin-top: 10px;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-new-task:hover {
+  background-color: #0077A6;
+}
+
+/* モーダル全体のスタイリング */
+.modal {
+    display: none; /* 初期状態では非表示 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* バックグラウンドの半透明度を設定 */
+    z-index: 1;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff; /* モーダルの背景色 */
+    margin: 39% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* テキストエリアのスタイリング */
+#task-modal-textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none; /* テキストエリアのリサイズを無効化 */
+}
+
+#save-task {
+    background-color: #007BFF; /* 保存ボタンの背景色 */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* モーダルウィンドウ内のスクロールバーをカスタマイズ（オプション） */
+.modal-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}

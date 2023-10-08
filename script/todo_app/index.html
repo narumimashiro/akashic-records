@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="column-container">
+      <div class="column" id="todo">
+        <h3>TODO</h3>
+        <div class="task-list" id="todo-list" ondrop="drop(event, 'todo')" ondragover="allowDrop(event)"></div>
+        <button id="add-new-task">+</button>
+      </div>
+      <div class="column" id="inprogress">
+        <h3>In Progress</h3>
+        <div class="task-list" id="inprogress-list" ondrop="drop(event, 'inprogress')" ondragover="allowDrop(event)"></div>
+      </div>
+      <div class="column" id="resolved">
+        <h3>Resolved</h3>
+        <div class="task-list" id="resolved-list" ondrop="drop(event, 'resolved')" ondragover="allowDrop(event)"></div>
+      </div>
+    </div>
+    <div class="column" id="trash">
+      <h3>Trash</h3>
+      <div class="task-list" id="trash-list" ondrop="drop(event, 'trash')" ondragover="allowDrop(event)"></div>
+    </div>
+  </div>
+
+  <!-- タスク編集用のモーダル -->
+  <div id="task-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <textarea id="task-modal-textarea" rows="6" placeholder="Edit task"></textarea>
+      <button id="save-task">Save</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

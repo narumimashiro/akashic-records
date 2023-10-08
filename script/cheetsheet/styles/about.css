@@ -1,0 +1,17 @@
+/* Aboutページのスタイル */
+#content {
+  padding: 20px;
+  background-color: #fff; /* 背景色を白に設定 */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* ボックスシャドウを追加 */
+  border-radius: 5px; /* 角丸の設定 */
+}
+
+h1 {
+  font-size: 24px;
+  color: #333; /* タイトルの文字色を設定 */
+}
+
+p {
+  font-size: 16px;
+  color: #666; /* テキストの文字色を設定 */
+}

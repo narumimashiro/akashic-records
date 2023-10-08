@@ -1,0 +1,225 @@
+/* 基本スタイル */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Showcard Gothic", cursive;
+  background-color: #FCE4EC; /* 桜色のベースカラー */
+}
+
+/* ヘッダーのスタイル */
+.circle-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: black;
+  animation: bounceUpDown 2s infinite alternate;
+}
+
+.circle:nth-child(1),
+.circle:nth-child(4) {
+    background-color: #00bfff; /* 水色 */
+}
+.circle:nth-child(2),
+.circle:nth-child(5) {
+    background-color: orange;
+}
+.circle:nth-child(3),
+.circle:nth-child(6) {
+    background-color: yellow;
+}
+
+@keyframes bounceUpDown {
+  0%, 100% {
+      transform: translateY(-10px);
+  }
+  50% {
+      transform: translateY(10px); /* 上下のアニメーションの高さを調整 */
+  }
+}
+
+/* ナビゲーションのスタイル */
+nav ul {
+  list-style: none;
+  padding: 20px 0; /* 上下の余白を追加 */
+  display: flex;
+  justify-content: center;
+  background-color: #FF80AB; /* 別のカラーを設定 */
+}
+
+nav ul li {
+  margin: 0 15px; /* マージンを少し広めに調整 */
+}
+
+nav ul li a {
+  font-size: 20px; /* 例えばここでサイズを調整 */
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #FF4081; /* ホバーカラー */
+}
+
+/* セクションのスタイル */
+.styled-section {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* タイトルのスタイル */
+h2, h3 {
+  color: #333;
+}
+
+/* リストのスタイル */
+ol, ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+/* 強調テキストのスタイル */
+strong {
+  color: #ff9900;
+}
+
+/* パラグラフのスタイル */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* リンクのスタイル */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* リンクホバーのスタイル */
+a:hover {
+  text-decoration: underline;
+}
+
+h2, h3 {
+  margin-bottom: 10px;
+  padding-bottom: 5px; /* アンダーラインとの間隔を調整 */
+  color: #333;
+  position: relative;
+  transition: background-color 0.5s ease;
+}
+
+h2 {
+  background-color: #fff3e6; /* 背景色（うっすらとした桜色） */
+  padding: 10px; /* 背景色とテキストの間隔 */
+}
+
+h2::after,
+h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* アンダーラインの高さ */
+}
+
+h2::after {
+  background-color: #ff6b81; /* 桜色 */
+}
+
+h3::after {
+  background-color: #ffb3b3; /* より明るい桜色 */
+}
+
+pre {
+  background-color: #f0f0f0; /* 背景色（薄いグレー） */
+  font-family: 'Courier New', monospace; /* ソースコードっぽいフォント */
+  font-size: 18px; /* 文字の大きさを調整 */
+  padding: 2px 4px; /* 背景色と文字の間隔 */
+}
+
+pre > code.modal-trigger {
+  background-color: rgba(135, 206, 235, 0.5); /* 薄い透明な水色の背景色 */
+  display: block;
+  padding: 20px;
+  border-radius: 5px;
+  white-space: pre-wrap; /* テキストの改行を維持 */
+  font-family: monospace; /* 等幅フォントを使用 */
+}
+
+.color-animated {
+  transition: color 0.5s; /* カラーアニメーションのトランジション時間 */
+}
+
+/* モーダルウィンドウのスタイル */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* クリック時に表示されるスタイル */
+.pre-clicked {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+
+/* 爆発アニメーションのスタイル */
+.explosion {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: fixed; /* positionをfixedに変更 */
+  transform-origin: center;
+  border-radius: 50%;
+  animation: explode 0.5s ease-out forwards;
+  display: none;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(50);
+    opacity: 0;
+  }
+}

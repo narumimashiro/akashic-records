@@ -1,0 +1,19 @@
+<nav className={`${slide ? `${styles['slide-menu-open']}` : `${styles['slide-menu-hidden']}`}`}>
+
+@mixin common-slide($right: 0px)
+  position: fixed
+  top: 0
+  right: $right
+  width: 390px
+  height: 100vh
+  margin: 0
+  padding: 0
+  transition: all 500ms ease
+
+.slide-menu-hidden
+  @include common-slide(-210px)
+  z-index: 0
+
+.slide-menu-open
+  @include common-slide(0px)
+  background-color: #c3e5e7
