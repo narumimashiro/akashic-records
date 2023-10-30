@@ -85,8 +85,6 @@ getChatGPTResponse();
 
 ### Python
 
-<details><summary>Sample Python</summary>
-
 ```Python
 import openai
 
@@ -102,11 +100,8 @@ response = openai.Completion.create(
 print(response.choices[0].text)
 
 ```
-</details>
 
 ### Ruby
-
-<details><summary>Sample Ruby</summary>
 
 ```Ruby
 require 'openai'
@@ -124,4 +119,3 @@ puts response.choices[0].text
 
 
 ```
-</details>
