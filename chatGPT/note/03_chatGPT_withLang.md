@@ -1,3 +1,10 @@
+- [ChatGPTとプログラミング言語](#ChatGPTとプログラミング言語)
+  - [ChatGPTと相性の良いプログラミング言語](#ChatGPTと相性の良いプログラミング言語)
+  - [ChatGPT APIの使用例](#ChatGPT-APIの使用例)
+    - [TypeScript](#TypeScript)
+    - [Python](#Python)
+    - [Ruby](#Ruby)
+
 # ChatGPTとプログラミング言語
 
 ## ChatGPTと相性の良いプログラミング言語
