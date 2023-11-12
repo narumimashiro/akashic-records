@@ -1,3 +1,15 @@
+- [OpenAI Function Calling](#OpenAI-Function-Calling)
+  - [Function Callingとは](#Function-Callingとは)
+  - [具体的な使用イメージ](#具体的な使用イメージ)
+  - [実際に使っている様子](#実際に使っている様子)
+    - [モデルの呼び出し](#モデルの呼び出し)
+    - [モデルからの応答](#モデルからの応答)
+    - [応答を使用して、API呼び出し](#応答を使用して、API呼び出し)
+    - [応答を元にAPI呼び出しを行った返答](#応答を元にAPI呼び出しを行った返答)
+    - [API応答をモデルに送り返す](#API応答をモデルに送り返す)
+    - [要約した結果](#要約した結果)
+  - [最後に](#最後に)
+
 # OpenAI Function Calling
 
 ## Function Callingとは
