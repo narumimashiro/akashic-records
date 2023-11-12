@@ -164,6 +164,8 @@ OpenAIはシステム内に組み込まれた著作権保護により、顧客�
 
 ## GPTs
 
+[OpenAI GPTs](https://openai.com/blog/introducing-gpts)
+
 ニーズに合わせたカスタム可能なchatGPTを作成できる機能の追加
 
 これによりユーザーは独自の指示や追加知識、スキルの組み合わせを持つカスタムchatGPTを作成、共有することが可能となった
