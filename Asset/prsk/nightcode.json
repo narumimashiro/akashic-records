@@ -40,5 +40,33 @@
       "sekai_3d": "DpfT5yVEJvk?si=ZXi5MHts9IeRt3oC",
       "sekai_2d": "dk13KyWwZn4?si=cu-p9cMJTdN9VRao"
     }
+  },
+  {
+    "id": "NightcodeAt25",
+    "unit_name": {
+      "unit": "25時、ナイトコードで。",
+      "feat": "KAITO"
+    },
+    "song_title": "熱異常",
+    "artist_name": "いよわ",
+    "youtube_src": {
+      "original": "b2NTglk9tvI?si=2kla0GDQUJos7M9k",
+      "sekai_3d": "anJrjWw6zQA?si=OlzoM9EwC--dmTKh",
+      "sekai_2d": ""
+    }
+  },
+  {
+    "id": "NightcodeAt25",
+    "unit_name": {
+      "unit": "25時、ナイトコードで。",
+      "feat": "鏡音リン"
+    },
+    "song_title": "ノマド",
+    "artist_name": "バルーン",
+    "youtube_src": {
+      "original": "mKfwzOgorXs?si=kjq1DFxC1HWl3_pq",
+      "sekai_3d": "GcuRzFt7juI?si=Ei1WvpA-E3FqKAe2",
+      "sekai_2d": ""
+    }
   }
 ]

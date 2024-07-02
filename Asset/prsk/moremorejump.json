@@ -12,5 +12,61 @@
       "sekai_3d": "xcpIgzSLjJU?si=CMT-fsBvdbXEvcvu",
       "sekai_2d": ""
     }
+  },
+  {
+    "id": "MoreMoreJump",
+    "unit_name": {
+      "unit": "MORE MORE JUMP!",
+      "feat": "初音ミク"
+    },
+    "song_title": "JUMPIN’ OVER !",
+    "artist_name": "r-906",
+    "youtube_src": {
+      "original": "P2KRg60WPvE?si=cC2WRfIi8HVqbmjM",
+      "sekai_3d": "Z4IXd7EYgb4?si=j9o6_WgEyZfO7coC",
+      "sekai_2d": "F1v97Y6z0o0?si=OtK3v8gCTqkYj2Fg"
+    }
+  },
+  {
+    "id": "MoreMoreJump",
+    "unit_name": {
+      "unit": "MORE MORE JUMP!",
+      "feat": "初音ミク"
+    },
+    "song_title": "flos",
+    "artist_name": "R Sound Design",
+    "youtube_src": {
+      "original": "bUbOc97FpUA?si=b79LHUwUD_g8BFM4",
+      "sekai_3d": "GGhXXaLmIGA?si=sk_FqXeXiS-RRA-L",
+      "sekai_2d": ""
+    }
+  },
+  {
+    "id": "MoreMoreJump",
+    "unit_name": {
+      "unit": "MORE MORE JUMP!",
+      "feat": "巡音ルカ"
+    },
+    "song_title": "ももいろの鍵",
+    "artist_name": "いよわ",
+    "youtube_src": {
+      "original": "sAUdWpemfGw?si=aDHCUgMNbLKM4b_i",
+      "sekai_3d": "LqPYSFgWG3g?si=chTWXGMgQw_TJTO_",
+      "sekai_2d": ""
+    }
+  },
+  {
+    "id": "MoreMoreJump",
+    "unit_name": {
+      "unit": "MORE MORE JUMP!",
+      "feat": "初音ミク"
+    },
+    "song_title": "イフ",
+    "artist_name": "ユリイ・カノン",
+    "youtube_src": {
+      "original": "Xt1x1s2eAno?si=BPEzlwyKppORIqWY",
+      "sekai_3d": "VsfcS_-b4j8?si=IsSLJ2U45JjZJGMt",
+      "sekai_2d": "egAHniCboNQ?si=DVUXbiHNXt5P_Oxb"
+    }
   }
 ]

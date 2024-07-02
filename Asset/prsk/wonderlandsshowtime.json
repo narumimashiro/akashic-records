@@ -12,5 +12,47 @@
       "sekai_3d": "ie1z782FP98?si=YnNDmLVelf75T8V-",
       "sekai_2d": "e14s4bMmHdI?si=B9qVA09IBq-Em3K5"
     }
+  },
+  {
+    "id": "wonderlands_showtime",
+    "unit_name": {
+      "unit": "ワンダーランズ×ショウタイム",
+      "feat": "初音ミク"
+    },
+    "song_title": "オペラ！スペースオペラ！",
+    "artist_name": "ナユタン星人",
+    "youtube_src": {
+      "original": "",
+      "sekai_3d": "126hmnFsKpQ?si=AXbv1npqwII0iT9l",
+      "sekai_2d": "rmRHecZZGvs?si=ZkrBq-zd-0EtXOKf"
+    }
+  },
+  {
+    "id": "wonderlands_showtime",
+    "unit_name": {
+      "unit": "ワンダーランズ×ショウタイム",
+      "feat": "初音ミク"
+    },
+    "song_title": "世界を照らすテトラッド",
+    "artist_name": "OSTER project",
+    "youtube_src": {
+      "original": "R0DWNySEhcc?si=IFO7yvbkKkG1UCB7",
+      "sekai_3d": "648kLUO79i4?si=0d-Iou_ehZCVT9ds",
+      "sekai_2d": "RmHiTOqfJP8?si=pcZ0dkTTOxCzMf8L"
+    }
+  },
+  {
+    "id": "wonderlands_showtime",
+    "unit_name": {
+      "unit": "ワンダーランズ×ショウタイム",
+      "feat": "初音ミク"
+    },
+    "song_title": "箱庭のコラル",
+    "artist_name": "koyori",
+    "youtube_src": {
+      "original": "gB4hx1MxcGs?si=6EZBUh7-NIClUHKB",
+      "sekai_3d": "SVCi-d0UrVw?si=j_1-YoyO99VLA8V_",
+      "sekai_2d": ""
+    }
   }
 ]

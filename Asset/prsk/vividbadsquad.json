@@ -12,5 +12,47 @@
       "sekai_3d": "BqFyfOIdRYM?si=AifnbHRknIapBX78",
       "sekai_2d": "UAzw5B-35kI?si=0DS6OPUibqZK3tyA"
     }
+  },
+  {
+    "id": "vivid_bad_square",
+    "unit_name": {
+      "unit": "Vivid BAD SQUAD",
+      "feat": "MEIKO"
+    },
+    "song_title": "酔いどれ知らず",
+    "artist_name": "Kanaria",
+    "youtube_src": {
+      "original": "vB8sxY_PJ_w?si=oo0z0e1BMFajyIpI",
+      "sekai_3d": "zODDTgKhc1w?si=YNAEtwI9CPLSe1Io",
+      "sekai_2d": ""
+    }
+  },
+  {
+    "id": "vivid_bad_square",
+    "unit_name": {
+      "unit": "Vivid BAD SQUAD",
+      "feat": "MEIKO"
+    },
+    "song_title": "仮死化",
+    "artist_name": "遼遼",
+    "youtube_src": {
+      "original": "POD_KGL2aqQ?si=_4mG_dDSSLrI-fIr",
+      "sekai_3d": "EkZ1qsjK2yc?si=D9jVudaYJjtde-Xk",
+      "sekai_2d": "Mj38FoEYVGA?si=oMjc9IXRthsOhVXB"
+    }
+  },
+  {
+    "id": "vivid_bad_square",
+    "unit_name": {
+      "unit": "Vivid BAD SQUAD",
+      "feat": "巡音ルカ"
+    },
+    "song_title": "マーシャル・マキシマイザー",
+    "artist_name": "柊マグネタイト",
+    "youtube_src": {
+      "original": "jMKPYg0uhCI?si=59PUKifHQvcnAxzb",
+      "sekai_3d": "-Dw0lHEhWZk?si=O8nSHuEpi_NdmnKD",
+      "sekai_2d": ""
+    }
   }
 ]

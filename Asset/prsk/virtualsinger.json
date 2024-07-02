@@ -3,6 +3,34 @@
     "id": "VirtualSinger",
     "unit_name": {
       "unit": "Virtual Singer",
+      "feat": ""
+    },
+    "song_title": "アイムマイン",
+    "artist_name": "halyosy",
+    "youtube_src": {
+      "original": "yVMHWv7hKTE?si=sIiKHCJDf-NHlLRG",
+      "sekai_3d": "sUAyGGf-hOk?si=C63hBCL_A6SdgOYp",
+      "sekai_2d": ""
+    }
+  },
+  {
+    "id": "VirtualSinger",
+    "unit_name": {
+      "unit": "Virtual Singer",
+      "feat": "初音ミク"
+    },
+    "song_title": "ブループラネット",
+    "artist_name": "DECO*27",
+    "youtube_src": {
+      "original": "-2KzcaiyBFo?si=M_te74iWzFmPW9m0",
+      "sekai_3d": "rVweiBL5UbM?si=yzUcHxkUY0ZrGHkW",
+      "sekai_2d": ""
+    }
+  },
+  {
+    "id": "VirtualSinger",
+    "unit_name": {
+      "unit": "Virtual Singer",
       "feat": "鏡音リン"
     },
     "song_title": "難聴系男子が倒せない",
@@ -10,6 +38,20 @@
     "youtube_src": {
       "original": "GhRe642nPQs?si=hWeYJdbvp3kwtLMk",
       "sekai_3d": "RonzOpN8-pY?si=JGuCvmxlF9fuLizE",
+      "sekai_2d": ""
+    }
+  },
+  {
+    "id": "VirtualSinger",
+    "unit_name": {
+      "unit": "Virtual Singer",
+      "feat": "鏡音レン"
+    },
+    "song_title": "豚になってyeah yeah",
+    "artist_name": "Neru",
+    "youtube_src": {
+      "original": "Z9DXOZUbmJ4?si=yzFm8LBJBSOLfoao",
+      "sekai_3d": "DAmEyiz9Gjg?si=hXafJPOpV0THjy_b",
       "sekai_2d": ""
     }
   }

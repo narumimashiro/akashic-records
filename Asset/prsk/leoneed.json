@@ -12,5 +12,47 @@
       "sekai_3d": "pVLy72nTc90?si=5Ispj-AdccWtn93Q",
       "sekai_2d": "wgpHtgV-WI4?si=kEbR3JGn7a76x8vt"
     }
+  },
+  {
+    "id": "Leoneed",
+    "unit_name": {
+      "unit": "Leo/need",
+      "feat": "MEIKO"
+    },
+    "song_title": "すれすれ",
+    "artist_name": "すこっぷ",
+    "youtube_src": {
+      "original": "u4MhA-3ateU?si=KhR5m8z4Tej_qxxi",
+      "sekai_3d": "flsR9ZDGu-s?si=hknmW4kC2UJdbEVG",
+      "sekai_2d": "Dn1ym4Z416A?si=p3-BfDX-_yNo8aAq"
+    }
+  },
+  {
+    "id": "Leoneed",
+    "unit_name": {
+      "unit": "Leo/need",
+      "feat": "KAITO"
+    },
+    "song_title": "レグルス",
+    "artist_name": "ゆうゆ",
+    "youtube_src": {
+      "original": "8Kp3EqKnOCw?si=89JfdkC5AnRyEsWq",
+      "sekai_3d": "rTPcGVk0bIs?si=223B5BYEL6PebSlb",
+      "sekai_2d": "i8XnOZgtE34?si=O3jdFQsBn43n5_Ul"
+    }
+  },
+  {
+    "id": "Leoneed",
+    "unit_name": {
+      "unit": "Leo/need",
+      "feat": "MEIKO"
+    },
+    "song_title": "快晴",
+    "artist_name": "Orangestar",
+    "youtube_src": {
+      "original": "BwGpXK3W6tE?si=8hozt7yjG-AJ-7EZ",
+      "sekai_3d": "rEXppCcc4PwI?si=C-DYmBq3lx4Znbb1",
+      "sekai_2d": "XhWcA37YAd8?si=XWb34OIDqixPDYll"
+    }
   }
 ]
