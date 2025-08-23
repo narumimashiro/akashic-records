@@ -1,4 +1,4 @@
 # Terraform state files
-*.tfstate
-*.tfstate.*
-stacks/frontend-static/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+**/.terraform
