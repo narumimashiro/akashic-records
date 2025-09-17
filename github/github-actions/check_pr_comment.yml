@@ -1,0 +1,31 @@
+name: Prevent Merge with Unresolved Comments
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, edited]
+
+jobs:
+  check_unresolved_comments:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check unresolved review comments
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.payload.pull_request.number;
+
+            // PRのレビューコメントを取得
+            const { data: comments } = await github.rest.pulls.listReviewComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber,
+            });
+
+            // 未解消コメント（resolved=false）があるか確認
+            const unresolvedComments = comments.filter(c => !c.resolved);
+
+            if (unresolvedComments.length > 0) {
+              core.setFailed(`There are ${unresolvedComments.length} unresolved comment(s) in this PR. Resolve them before merging.`);
+            } else {
+              console.log("All comments are resolved. You can merge safely.");
+            }
