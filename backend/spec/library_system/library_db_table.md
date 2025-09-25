@@ -42,13 +42,23 @@
 
 ## 図書館マスタ (m_library)
 
-| カラム名      | データ型  | NULL許可 | 制約  | デフォルト値 | 説明                 |
-| ------------- | --------- | :------: | :---: | ------------ | -------------------- |
+| カラム名     | データ型    | NULL許可 | 制約  | デフォルト値 | 説明                      |
+| ------------ | ----------- | :------: | :---: | ------------ | ------------------------- |
+| id           | BIGSERIAL   | NOT NULL |  PK   | -            | 図書館ID                  |
+| name         | VARCHAR(20) | NOT NULL |  UK   | -            | 図書館名                  |
+| closed_days  | VARCHAR(1)  |   YES    |   -   | -            | 定休日(0:日,1:月,...6:土) |
+| opening_hour | TIMESTAMP   | NOT NULL |   -   | -            | 開館時間                  |
+| closing_time | TIMESTAMP   | NOT NULL |   -   | -            | 閉館時間                  |
 
 ## 在庫管理テーブル (t_mgt_inventory)
 
-| カラム名      | データ型  | NULL許可 | 制約  | デフォルト値 | 説明                 |
-| ------------- | --------- | :------: | :---: | ------------ | -------------------- |
+| カラム名        | データ型  | NULL許可 | 制約  | デフォルト値 | 説明         |
+| --------------- | --------- | :------: | :---: | ------------ | ------------ |
+| id              | BIGSERIAL | NOT NULL |  PK   | -            | 在庫ID       |
+| book_id         | BIGINT    | NOT NULL |  FK   | -            | m_book.id    |
+| number_of_piece | SMALLINT  |    -     |   -   | -            | 部数         |
+| library_id      | BIGINT    | NOT NULL |  FK   | -            | m_library.id |
+| books_on_loan   | SMALLINT  | NOT NULL |   -   | -            | 貸出中の数   |
 
 ## 共通項目
 
