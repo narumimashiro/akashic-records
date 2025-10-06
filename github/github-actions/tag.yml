@@ -1,0 +1,99 @@
+# .github/workflows/character-labels.yml
+name: Daily Character Labels
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  add-character-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get current date
+        id: date
+        run: echo "day=$(date +%d)" >> $GITHUB_OUTPUT
+        
+      - name: Create and add character label
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const day = parseInt('${{ steps.date.outputs.day }}');
+            
+            // キャラクター設定（1-31日対応）
+            const characters = {
+              1: { name: "元気な戦士", comment: "今日も一日頑張るぞー！⚔️", color: "ff4444" },
+              2: { name: "賢者", comment: "知識こそが最大の武器だ 📚", color: "4444ff" },
+              3: { name: "忍者", comment: "影に隠れて任務完了... 🥷", color: "444444" },
+              4: { name: "魔法使い", comment: "魔法の力でコードを変換！✨", color: "aa44ff" },
+              5: { name: "騎士", comment: "正義と名誉のために！🛡️", color: "44aaff" },
+              6: { name: "盗賊", comment: "こっそりバグを盗んできたよ 🗝️", color: "aa8844" },
+              7: { name: "僧侶", comment: "平和と調和を願って... 🙏", color: "ffaa44" },
+              8: { name: "錬金術師", comment: "完璧な調合を求めて 🧪", color: "44ffaa" },
+              9: { name: "吟遊詩人", comment: "コードに歌を込めて♪ 🎵", color: "ff44aa" },
+              10: { name: "ドラゴンスレイヤー", comment: "巨大バグも一撃で倒す！🐉", color: "ff8844" },
+              11: { name: "エルフ", comment: "自然と調和したコード 🌿", color: "44ff44" },
+              12: { name: "ドワーフ", comment: "頑丈な基盤を作り上げる⛏️", color: "884444" },
+              13: { name: "ダークマジシャン", comment: "闇の力で問題を解決... 🌙", color: "664488" },
+              14: { name: "ヒーラー", comment: "みんなの疲れを癒そう 💚", color: "44ff88" },
+              15: { name: "アーチャー", comment: "的確に問題を射抜く！🏹", color: "888844" },
+              16: { name: "バーサーカー", comment: "猛烈な勢いで実装だー！💢", color: "ff4488" },
+              17: { name: "サモナー", comment: "新機能を召喚します 🔮", color: "8844ff" },
+              18: { name: "パラディン", comment: "聖なる力でコードを守護 ✨", color: "ffff44" },
+              19: { name: "アサシン", comment: "静かに問題を暗殺... 🗡️", color: "444488" },
+              20: { name: "シャーマン", comment: "精霊たちがささやいてる 🌟", color: "44ffff" },
+              21: { name: "ウィザード", comment: "高度な魔法でコード錬成 🪄", color: "8888ff" },
+              22: { name: "レンジャー", comment: "自然の知恵で道を切り開く 🌲", color: "448844" },
+              23: { name: "ネクロマンサー", comment: "古いコードに新たな命を... ☠️", color: "884488" },
+              24: { name: "モンク", comment: "心を空にして集中... 🧘", color: "ffaa88" },
+              25: { name: "ソーサラー", comment: "生まれ持った才能で解決！⚡", color: "ff8888" },
+              26: { name: "バード", comment: "美しいコードで心を奪う 🎭", color: "aa88ff" },
+              27: { name: "ウォーロック", comment: "契約により力を得た... 👿", color: "aa4444" },
+              28: { name: "ドルイド", comment: "形を変えて問題に対処 🐺", color: "88aa44" },
+              29: { name: "テンプラー", comment: "神聖な使命を果たそう ⛪", color: "aaaaff" },
+              30: { name: "海賊", comment: "お宝のようなコードを探せ！⚓", color: "4488aa" },
+              31: { name: "伝説の勇者", comment: "今日こそ世界を救うコードを！👑", color: "ffaa00" }
+            };
+            
+            const character = characters[day];
+            const labelName = `${day}日: ${character.name}`;
+            const labelDescription = character.comment;
+            
+            try {
+              // ラベルが存在するかチェック
+              await github.rest.issues.getLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: labelName
+              });
+            } catch (error) {
+              if (error.status === 404) {
+                // ラベルが存在しない場合は作成
+                await github.rest.issues.createLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name: labelName,
+                  description: labelDescription,
+                  color: character.color
+                });
+                console.log(`Created label: ${labelName}`);
+              }
+            }
+            
+            // PRにラベルを追加
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: [labelName]
+            });
+            
+            console.log(`Added label "${labelName}" to PR #${context.issue.number}`);
+            
+            // PRにコメントも追加（オプション）
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `🎭 **${character.name}** が登場！\n\n> ${character.comment}\n\n今日も素晴らしいコードをありがとう！`
+            });
