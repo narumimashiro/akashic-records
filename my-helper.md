@@ -26,3 +26,27 @@ ssh -T git@github.com
 ```
 
 これでHi!と呼ばれたらOK
+
+## ssh鍵紐づけの永続化
+
+上記の設定をしても再起動したらリセットされちゃうってとき
+
+問題のリポジトリで
+
+```bash
+git remote -v
+```
+を実行する
+
+そうすると
+```bash
+origin  git@github.com:your-username/repo-name.git (fetch)
+origin  git@github.com:your-username/repo-name.git (push)
+```
+という感じで表示される
+
+.ssh/フォルダにある`config`ファイルを開いて、扱いたい鍵側のエイリアスを確認し書き換える
+
+```bash
+git remote set-url origin git@github-XXXX:your-username/repo-name.git
+```
