@@ -4,6 +4,7 @@ name: Daily Character Labels
 on:
   pull_request:
     types: [opened, synchronize]
+  workflow_call:
 
 jobs:
   add-character-label:
