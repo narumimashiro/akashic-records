@@ -1,0 +1,37 @@
+EC2
+Fargate
+ECS
+EKS
+S3
+DynamoDB
+CloudFront
+RDS
+ElastiCache
+Athena
+Aurora
+Step Functions
+Lambda
+SQS
+SNS
+API Gateway
+ALB
+NLB
+CloudWatch
+CloudTrail
+Cognito
+IAM
+Secrets Manager
+VPC
+Route53
+CloudFormation
+WAF
+CodePipeline
+CodeBuild
+CodeDeploy
+ECR
+EventBridge
+Glue
+Kinesis
+SSO
+GuardDuty
+Redshift
