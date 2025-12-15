@@ -35,3 +35,20 @@ Kinesis
 SSO
 GuardDuty
 Redshift
+SageMaker
+Bedrock
+Lex
+Polly
+kiro
+Q
+Elastic Beanstalk
+Lightsail
+ELB
+Auto Scaling
+Billing and Cost Management
+Budgets
+Cost Explorer
+Trusted Advisor
+Shield
+Config
+Artifact
