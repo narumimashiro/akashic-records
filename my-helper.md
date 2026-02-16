@@ -50,3 +50,11 @@ origin  git@github.com:your-username/repo-name.git (push)
 ```bash
 git remote set-url origin git@github-XXXX:your-username/repo-name.git
 ```
+
+## Githubに機密情報が入っていないかチェック
+
+PowerShellで以下実行
+
+```docker
+docker run --rm -v ${PWD}:/path -w /path zricethezav/gitleaks:latest detect -v
+```
